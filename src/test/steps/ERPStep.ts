@@ -131,7 +131,7 @@ When('user fills customer details {string},{string},{string},{string},{string},{
    await page.locator('#x_Notes').fill(Cnotes)
 });
 
-When('user navigate to customer table', async function () {
+When('user navigates to customer table', async function () {
  if(!await page.locator('#psearch').isVisible())
   {
     await page.locator('.glyphicon.glyphicon-search.ewIcon').click()
