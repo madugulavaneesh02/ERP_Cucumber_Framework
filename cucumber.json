@@ -1,0 +1,26 @@
+{
+  "default": {
+    "paths": [
+      "src/test/featurefiles/ERP.feature"
+    ],
+
+    "requireModule": [
+      "ts-node/register"
+    ],
+
+    "require": [
+      "src/test/steps/ERPStep.ts"
+    ],
+
+    "formatOptions": {
+      "snippetInterface": "async-await"
+    },
+
+    "format": [
+    "pretty",
+    "allure-cucumberjs/reporter",
+    "html:cucumber-report.html"
+],
+    "dryRun": false
+  }
+}
